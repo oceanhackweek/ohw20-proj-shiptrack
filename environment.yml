@@ -3,111 +3,53 @@ channels:
   - conda-forge
 dependencies:
   - python=3.8
-  - pangeo-notebook=2020.06.03
-  - argopy
   - bokeh
   - bottleneck
   - cartopy <0.18
-  - cdsapi
-  - cf-units
-  - cf_xarray
+  # - cf-units
+  # - cf_xarray
   - colorcet
-  - compilers
-  - cotede
-  - ctd
+  # - compilers
+  # - ctd
   - dask
   - datashader
   - descartes
   - erddapy
-  - geolinks
   - geopandas
   - geoviews
   - gsw
   - h5netcdf
   - holoviews
   - hvplot
-  - intake
-  - ioos-tools
-  - ioos_qc
+  # - intake
+  # - ioos-tools
   - ipyleaflet
-  - jupyter
-  - jupyter-rsession-proxy
-  - jupyter_contrib_nbextensions
-  - jupyterlab
+  # - jupyter
+  # - jupyter_contrib_nbextensions
+  # - jupyterlab
   - matplotlib-base
   - nc-time-axis
   - netcdf4
   - numpy
-  - oceansdb
   - palettable
   - pandas<1.1
+  # movingpandas does not install properly if panel is not included
   - panel
   - param
-  - podaacpy
-  - pyoos
   - rasterio
   - requests
   - retrying
   - s3fs
   - scipy
   - seaborn
-  - seawater
   - shapely
-  - siphon
   - xarray
   - xlrd
   - zarr
-  # R packages
-  - r-base
-  - r-ape
-  - r-cowplot
-  - r-crul
-  - r-gridextra
-  - r-gsw
-  - r-irkernel
-  - r-leaflet
-  - r-mapdata
-  - r-maps
-  - r-maptools
-  - r-ncdf4
-  - r-oce
-  - r-patchwork
-  - r-plotly
-  - r-raster
-  - r-rastervis
-  - r-remotes
-  - r-rgdal
-  - r-rgeos
-  - r-rnaturalearth
-  - r-rnaturalearthdata
-  - r-sf
-  - r-tidyverse
-  - r-vegan
-  - rpy2
-  # robis deps
-  - r-commonmark
-  - r-dplyr
-  - r-ggplot2
-  - r-httpcache
-  - r-httr
-  - r-jsonlite
-  - r-leaflet
-  - r-mapedit
-  - r-robis
-  - r-tibble
-  - r-tidyr
-  - r-rlang
-  # cannot do latest r-sf for now, so no latest r-obis as well :-/
-  # - r-sf >=0.9_5
-  - r-sf
-  # extras
-  - conda-lock
-  - emacs
-  - git
-  - graphviz
-  - nano
-  - unzip
-  - vim
-  - zip
   # ohw20-proj-shiptrack
-  - movingpandas
+  - nb_conda_kernels
+  - geojson
+  # If movingpandas is unpinned, 0.2rc1 is installed.
+  # With movingpandas==0.3rc1, the run-time version label says 0.2.rc2, not 0.3!
+  - movingpandas==0.3rc1
+  
